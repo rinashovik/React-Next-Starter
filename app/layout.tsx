@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,70 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+<header>
+{/* <nav className="navbar navbar-expand-xxl navbar-light bg-light">
+        <a className="navbar-brand" href="#">LOGO</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
+                <li className="nav-item active">
+                    <a className="nav-link" href="#">Home</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Link 1</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Link 2</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            <form className="d-flex">
+                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button className="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header> */}
+
+      {/* <body className={inter.className}>{children}</body> */}
+   
+      <h2>
+        <Link href="/dashboard">Dashboard</Link>
+      </h2>
+
+        < Link href="/home" >Home</Link>
+        <div>        < Link href="/blog" >Blog</Link>
+        </div>
+        <div>        < Link href="/settings" >Settings</Link>
+</div>
+<div>        < Link href="/conference" >Conference</Link>
+</div>
+<div>        < Link href="/logout" >Log Out</Link>
+</div>
+        < Link href="/inbox" >Inbox</Link>
+   
+   </header>
     </html>
   );
 }
+
+// import React from 'react'
+
+// export default function RootLayout({children,
+// }: Readonly<{
+//   children: React.ReactNode;
+
+// }>) {
+//   return (
+// <html lang='en'>  
+// <head />
+// <body>{children}</body>
+// </html>
+//   )
+// }
+
