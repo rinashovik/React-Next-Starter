@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import styles from "./rootStyle.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,71 +17,48 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-<header>
-{/* <nav className="navbar navbar-expand-xxl navbar-light bg-light">
-        <a className="navbar-brand" href="#">LOGO</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-        </button>
+    <html lang="en" data-theme="dark">
+      <head />
+      <body>
+<header data-theme="light" >
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                    <a className="nav-link" href="#">Home</a>
+  <nav className="mx-auto px-6 text-white bg-black font-bold">
+
+    <div className="container justify-content-center">
+        <div className="navbar-header">
+            <a href="/" className="navbar-brand">@S-tech</a>
+</div>
+        <div className="navbar-collapse collapse">
+            <ul className="nav navbar-nav ">
+            <li className="nav-item">
+                    <a className="nav-link" href="login">Log In</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Link 1</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Link 2</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Link 3</a>
-                </li>
+                    <a className="nav-link" href="about">About</a>
+                </li>            
             </ul>
-            <form className="d-flex">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-primary" type="submit">Search</button>
-            </form>
+            <div className="justify-right">
+              <li>
+                    <form className="d-flex form-inline md-2 justify-right" role="search">
+                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button className="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </li>
+                </div>
         </div>
-    </nav>
-</header> */}
+    </div>
+</nav>
+</header> 
 
-      {/* <body className={inter.className}>{children}</body> */}
+<main>
+        <h2>    
+          <div className={styles.menuBarLink}>{children}</div>
+</h2>
    
-      <h2>
-        <Link href="/dashboard">Dashboard</Link>
-      </h2>
-
-        < Link href="/home" >Home</Link>
-        <div>        < Link href="/blog" >Blog</Link>
-        </div>
-        <div>        < Link href="/settings" >Settings</Link>
-</div>
-<div>        < Link href="/conference" >Conference</Link>
-</div>
-<div>        < Link href="/logout" >Log Out</Link>
-</div>
-        < Link href="/inbox" >Inbox</Link>
-   
-   </header>
+   </main>
+</body>
     </html>
   );
 }
 
-// import React from 'react'
-
-// export default function RootLayout({children,
-// }: Readonly<{
-//   children: React.ReactNode;
-
-// }>) {
-//   return (
-// <html lang='en'>  
-// <head />
-// <body>{children}</body>
-// </html>
-//   )
-// }
 

@@ -1,31 +1,32 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;  
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+   
   }
-}
+} 
+/* 
+* {
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-
+  /* color: rgb(var(--foreground-rgb)); */
+  background-color: rgb(224, 155, 17);
+  color: white;
+  /* box-sizing: border-box; */
   padding: 1rem;
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+ 
 }
 
 @layer utilities {
@@ -33,3 +34,20 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('./Components/Assets/abstarct-dark-color-mixiture-splashes.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+} */

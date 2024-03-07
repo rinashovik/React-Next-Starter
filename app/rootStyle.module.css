@@ -1,0 +1,29 @@
+.homeLink{
+    margin-top:10%;
+    text-decoration: none;
+    color: #fff;
+}
+.menuBarLink{
+    margin-top:10%;
+    text-decoration: solid;
+    color: rgb(120, 248, 178);
+}
+/* 
+.header{
+    width: 100%;
+    padding: 50px 0px 50px;
+    background: #212121;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+
+
+} */
+/* 
+.header{
+    width: 100%;
+    padding: 50px 0px 50px;
+    background: #212121;
+    color: white;
+
+} */

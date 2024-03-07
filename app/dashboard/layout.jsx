@@ -4,7 +4,7 @@ import React, { Children } from 'react'
 export default function DashboardLayout({children}) {
   return (
     <>
-        <header>
+        {/* <header>
             <nav class="navbar navbar-expand-lg border-bottom bg-white sticky-top shadow-sm justify-content-between navbar-light">
             <a class="navbar-brand" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@ export default function DashboardLayout({children}) {
                 </form>
             </div>
         </nav>
-        </header>
+        </header> */}
         <section>
             <h1>Dashboard</h1>
             </section>
