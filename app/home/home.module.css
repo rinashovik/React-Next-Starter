@@ -1,0 +1,20 @@
+.bgWrap{
+
+/* background-image: ; */
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bgHeader{
+    color: chocolate;
+    margin: 0;
+    padding-top: 10px;
+}
+.bgText{
+
+text-shadow: 0cap;
+color: blueviolet;
+}

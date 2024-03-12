@@ -161,3 +161,12 @@
 //     </Disclosure>
 //   )
 // }
+
+
+import React from 'react'
+
+export default function page() {
+  return (
+    <div>Log Out Page</div>
+  )
+}

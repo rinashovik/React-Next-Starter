@@ -1,32 +1,57 @@
 import Image from "next/image";
 import Link from "next/link";
+// import sunsetPic from "../images/shadow.jpg";
+import sunsetPic from "../images/sunset_3.jpg";
+
+import styles from "./globals.css"
+
 export default function Home() {
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    //  <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-       <main>
-        <div>
+
+
+    <main>
+      <div className="grid-col-5 flex justify-around mt-6">
+      {/* <div className="flex min-h-screen flex-col items-center justify-between p-24 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex"> */}
       <>
-      <h1>Welcome To The Simple Tech Learning Center Page!!!</h1>
-      <h2>
+
+        {/* < Link href="/" >Home</Link> */}
+
+
+      <li>
         <Link href="/dashboard">Dashboard</Link>
-      </h2>
+      </li>
 
-        < Link href="/home" >Home</Link>
-        <div>        < Link href="/blog" >Blog</Link>
-        </div>
-        <div>        < Link href="/settings" >Settings</Link>
-</div>
-<div>        < Link href="/conference" >Conference</Link>
-</div>
-<div>        < Link href="/logout" >Log Out</Link>
-</div>
-        < Link href="/inbox" >Inbox</Link>
+        <li>
+                  < Link href="/blog">Blog</Link>
+        </li>
+        <li>        < Link href="/settings">Settings</Link>
+</li>
+<li>        < Link href="/conference">Conference</Link>
+</li>
+<li>        < Link href="/logout">Log Out</Link>
+</li>
+<li>
+        < Link href="/inbox">Inbox</Link>
 
+      </li>   
 
       </>
-      </div>   
-     
+      </div>    
+                 <h1 className="mx-6 mt-10">Welcome Simple Tech Learning Center Page!!!</h1>
+
+                 <div >
+              <Image className={styles.bgWrap}
+              src={sunsetPic}
+              alt="Our story picture"
+              quality={100}
+              placeholder="blur"
+              sizes={"100vw"}
+                // fill
+              style={{
+                objectFit:"cover",
+              }}
+              />
+</div>
      </main>
   );
 }

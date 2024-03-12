@@ -24,9 +24,27 @@ body {
   /* color: rgb(var(--foreground-rgb)); */
   background-color: rgb(224, 155, 17);
   color: white;
-  /* box-sizing: border-box; */
   padding: 1rem;
+  margin: 0 auto;
  
+}
+
+.bgWrap{
+
+
+  position: fixed;
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+.bgHeader{
+  margin: 0;
+  padding-top: 25px;
+}
+.bgText{
+
+
 }
 
 @layer utilities {
